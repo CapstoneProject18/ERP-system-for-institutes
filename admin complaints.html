@@ -1,0 +1,122 @@
+<style>
+* {box-sizing: border-box}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 60%;
+  height:40%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit/register button */
+.registerbtn {
+  background-color: #ff6633;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 40%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity:1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+#dtable {
+    font-family: Times New Roman;
+    border-collapse: collapse;
+    width: 50%;
+}
+
+#dtable td, #dtable th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+
+#dtable tr:hover {background-color: #ddd;}
+
+#dtable th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #ff6633;
+    color: white;
+}
+
+</style>
+ 
+ 
+ <form name = "complaints" method="get" onsubmit="return validateForm()" action="complaintservlet">
+  <div class="container">
+    <h1>View Complaints</h1>
+    <hr>
+
+    <table id="dtable">
+  <tr>
+    <th>complaint no</th>
+    <th>department</th>
+	<th>description</th>
+	
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>lab equipment</td>
+	<td>microscope in lab 204 broken needs replacement</td>
+  </tr>
+    <tr>
+    <td>2</td>
+    <td>maintenance</td>
+	<td>classroom 4f not clean</td>
+  </tr>
+  
+  <tr>
+    <td>3</td>
+    <td>transport services</td>
+	<td>buses not arriving on time</td>
+  </tr>
+  
+   <tr>
+    <td>4</td>
+    <td>academics</td>
+	<td>course books not provided</td>
+  </tr>
+
+</table>
+
+  </div>
+
+  
+</form> 
