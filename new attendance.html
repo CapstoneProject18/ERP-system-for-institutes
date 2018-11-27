@@ -1,0 +1,108 @@
+<html>
+<head>
+<style>
+#dtable {
+    font-family: Times New Roman;
+    border-collapse: collapse;
+    width: 50%;
+}
+
+#dtable td, #dtable th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+
+#dtable tr:hover {background-color: #ddd;}
+
+#dtable th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #ff6633;
+    color: white;
+}
+
+
+.radiotext {
+    margin: 10px 10px 0px 0px;
+}
+
+.registerbtn {
+  background-color:#ff6633;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 30%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity:1;
+}
+</style>
+</head>
+<body>
+<form name = "registrationForm" method="get" onsubmit="return validateForm()" action="RegistrationServlet">
+<table id="dtable">
+  <tr>
+    <th>roll no</th>
+    <th>name</th>
+	<th>attendance</th>
+  </tr>
+  <tr>
+    <td>1</td>
+	<td>akash</td>
+	<td><div class="radio">
+	<label><input type="radio" id='Present' name="akash_attendance">Present</label> 
+	<label><input type="radio" id='Absent' name="akash_attendance">Absent</label>
+                </div></td>
+  </tr>
+    <tr>
+    <td>2</td>
+	<td>sairam</td>
+		<td><div class="radio">
+	<label><input type="radio" id='Present' name="sairam_attendance">Present</label> 
+	<label><input type="radio" id='Absent' name="sairam_attendance">Absent</label>
+                </div></td>
+  </tr>
+  </tr>
+  
+  <tr>
+    <td>3</td>
+	<td>sasanka</td>
+		<td><div class="radio">
+	<label><input type="radio" id='Present' name="sai_attendance">Present</label> 
+	<label><input type="radio" id='Absent' name="sai_attendance">Absent</label>
+                </div></td>
+  </tr>
+  </tr>
+  
+   <tr>
+    <td>4</td>
+	<td>rajesh</td>
+		<td><div class="radio">
+	<label><input type="radio" id='Present' name="rajesh_attendance">Present</label> 
+	<label><input type="radio" id='Absent' name="rajesh_attendance">Absent</label>
+                </div></td>
+  </tr>
+  </tr>
+  
+    <tr>
+    <td>5</td>
+	<td>tharun</td>
+		<td><div class="radio">
+	<label><input type="radio" id='Present' name="tharun_attendance">Present</label> 
+	<label><input type="radio" id='Absent' name="tharun_attendance">Absent</label>
+                </div></td>
+  </tr>
+  </tr>
+
+</table>
+<button type="submit" class="registerbtn">submit</button>
+
+</form> 
+</body>
+</html>
