@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app  version="3.0" 
+xmlns="http://java.sun.com/xml/ns/javaee" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" >
+   
+    <servlet>
+        <servlet-name>placement_add</servlet-name>
+        <servlet-class>placement_add</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>placement_add</servlet-name>
+        <url-pattern>/placement_add</url-pattern>
+    </servlet-mapping>
+    <welcome-file-list>
+        <welcome-file>placement-add-admin.html</welcome-file>
+    </welcome-file-list>
+	
+	
+	<servlet>
+        <servlet-name>view</servlet-name>
+        <servlet-class>view</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>view</servlet-name>
+        <url-pattern>/view</url-pattern>
+    </servlet-mapping>
+   
+	
+	<servlet>
+        <servlet-name>fpassword</servlet-name>
+        <servlet-class>fpassword</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>fpassword</servlet-name>
+        <url-pattern>/fpassword</url-pattern>
+    </servlet-mapping>
+    <welcome-file-list>
+        <welcome-file>fpassword.html</welcome-file>
+    </welcome-file-list>
+	 
+	 
+	 	<servlet>
+        <servlet-name>squestion</servlet-name>
+        <servlet-class>squestion</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>squestion</servlet-name>
+        <url-pattern>/squestion</url-pattern>
+    </servlet-mapping>
+    <welcome-file-list>
+        <welcome-file>squestion.html</welcome-file>
+    </welcome-file-list>
+</web-app>
