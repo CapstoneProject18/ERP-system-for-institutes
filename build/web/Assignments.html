@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html>
+<style>
+.box{ 
+border: 3px solid #f1f1f1;
+	background: #d6d6d6;
+	width:800px;
+  height:700px;
+  float:left;
+   padding-left: 60px;
+  
+
+}
+ .vertical-menu {
+    width: 200px; /* Set a width if you like */
+	height: 100%;
+	background-color: #d6d6d6;
+	float:left;
+}
+
+.vertical-menu a {
+    background-color: #d6d6d6; /* Grey background color */
+    color: black; /* Black text color */
+    display: block; /* Make the links appear below each other */
+    padding: 20px; /* Add some padding */
+    text-decoration: none; /* Remove underline from links */
+	border: 3px solid white;
+
+}
+
+.vertical-menu a:hover {
+    background-color: #ccc; /* Dark grey background on mouse-over */
+}
+
+.vertical-menu a.active {
+    background-color: #ff6633; 
+    color: white;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ff6633;
+}
+
+li {
+    float: centre;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+	font-size: 25px;
+    text-decoration: none;
+	border-style: solid;
+}
+
+li a:hover {
+    background-color: #ff6633;
+}
+.active {
+    background-color: #ff6633;
+}
+body {
+   background-image: url("institute.jpg");
+    background-repeat: no-repeat;
+	 background-size: cover;
+   }
+</style> 
+<body>
+  <ul>
+  <li><a href="dashboard.html" class="active">ERP for institutes</a></li>
+
+</ul> 
+
+ <div class="vertical-menu">
+ 
+  <a href="#" class="active">Home</a>
+  <a href="courses_student.html">Courses</a>
+  <a href="timetable_admin.html">Timetable</a>
+  <a href="attendance.html">Attendance</a>
+  <a href="placement-add-admin.html">Placements</a>
+  <a href="complaint/complaint-add.html">Complaints</a>
+   <a href="#">Contacts</a>
+</div> 
+<div class="box">
+<h1 style="font-size: 30px">Assignments</h1><br><br><hr>
+
+ <b>Chemistry</b><br>
+ <p> 1. write about the different states of matter?<br><br>2. write about the crystalline structure?<br></p>
+	<br><hr>
+	<b>Maths</b><br>
+   <p> Solve the equation<br>
+-2 x + 6 = 4 x - 2</p><br>
+	<hr>
+	
+		<b>Algorithms</b><br>
+   <p> Write a c program for a binary search<br>
+<br>
+	<hr>
+	</div>
+    <br>
+<a href="courses_student.jsp">Back to courses </a>
+<br>
+
+
+
+</body>
+</html>

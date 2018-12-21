@@ -1,0 +1,292 @@
+ <style>
+ 
+.vertical-menu {
+    width: 200px; /* Set a width if you like */
+	height: 100%;
+	background-color: #d6d6d6;
+	float:left;
+}
+
+.vertical-menu a {
+    background-color: #d6d6d6; /* Grey background color */
+    color: black; /* Black text color */
+    display: block; /* Make the links appear below each other */
+    padding: 20px; /* Add some padding */
+    text-decoration: none; /* Remove underline from links */
+	
+}
+
+.vertical-menu a:hover {
+    background-color: #ccc; /* Dark grey background on mouse-over */
+}
+
+.vertical-menu a.active {
+    background-color: #ff6633; 
+    color: white;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #d6d6d6;
+}
+
+li {
+    float: centre;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+	font-size: 25px;
+    text-decoration: none;
+	border-style: solid;
+}
+
+li a:hover {
+    background-color: #ff6633;
+	border-style: solid;
+}
+.active {
+    background-color: #ff6633;
+}
+body {
+   background-image: url("institute.jpg");
+    background-repeat: no-repeat;
+	 background-size: cover;
+   }
+
+.box{ 
+border: 3px solid #f1f1f1;
+	background: #d6d6d6;
+	width:800px;
+  height:450px;
+  float:left;
+   padding-left: 60px;
+  
+
+}
+#dtable {
+    font-family: Times New Roman;
+    border-collapse: collapse;
+    width: 90%;
+	    border: 3px solid white;
+
+}
+#dtable td, #dtable th {
+    border: 3px solid #ddd;
+    padding: 8px;
+	    border: 3px solid white;
+	
+}
+#dtable tr:hover {
+background-color: #ddd;
+    border: 3px solid #ddd;
+
+}
+#dtable th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #ff6633;
+    color: white;
+
+}
+.button {
+    background-color: #ff6633; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+	border: 3px solid white;
+}
+
+ ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #d6d6d6;
+	
+}
+
+li {
+    float: centre;
+}
+
+li a {
+    
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+	font-size: 25px;
+    text-decoration: none;
+	border-style: solid;
+}
+
+li a:hover {
+    background-color: #ff6633;
+	
+}
+.active {
+    background-color: #ff6633;
+}
+body {
+   background-image: url("institute.jpg");
+    background-repeat: no-repeat;
+	 background-size: cover;
+   }
+#dtable {
+    font-family: Times New Roman;
+    border-collapse: collapse;
+    width: 90%;
+	    border: 3px solid white;
+}
+
+#dtable td, #dtable th {
+    border: 3px solid white;
+    padding: 8px;
+}
+
+
+#dtable tr:hover {background-color: #ddd;}
+
+#dtable th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #ff6633;
+    color: white;
+	    border: 3px solid #ddd;
+}
+
+
+.radiotext {
+    margin: 10px 10px 0px 0px;
+}
+
+.registerbtn {
+  background-color:#ff6633;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 30%;
+  
+  border-radius: 24px;
+  border: 3px solid white;
+}
+
+.registerbtn:hover {
+ 
+}
+
+
+     /* Bordered form */
+form {
+    border: 3px solid #f1f1f1;
+   
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+    width: 25%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+	  text-align: center;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #ff6633;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 20%;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+    opacity: 0.8;
+}
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #ff6633;
+}
+
+body {
+   background-image: url("institute.jpg");
+    background-repeat: no-repeat;
+	 background-size: cover;
+   }
+
+
+
+/* Add padding to containers */
+.container {
+    padding: 16px;
+	 text-align: center;
+}
+
+
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.credits {
+        display: block;
+        float: none;
+    }
+    span.Course_incharge {
+        display: block;
+        float: none;
+    }
+    .cancelbtn {
+        width: 100%;
+    }
+} 
+ </style>
+ <ul>
+  <li><a href="dashboard.html" class="active">ERP for institutes</a></li>
+
+</ul> 
+
+
+ 
+ <form method = "POST" action="Add_course" >
+  <h1 style="font-size: 35px">Add a course</h1>
+  <div class="container">
+       <label for="Course_id"><b>Course id:</b></label>
+    <input type="text"  name="course_id" required/>
+<br>
+      <label for="Course_name"><b>Course name:</b></label>
+    <input type="text"  name="course_name" required/>
+<br>
+    <label for="credits"><b>No. of credits:</b></label>
+    <input type="text"  name="credits" required/>
+<br>
+<label for="Course_incharge"><b>Course incharge:</b></label>
+    <input type="text"  name="course_incharge" required/>
+<br>    
+    
+    <button type="submit">Add Course</button>
+   
+  </div>
+
+
+</form> 
+ 
